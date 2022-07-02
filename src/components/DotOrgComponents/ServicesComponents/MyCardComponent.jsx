@@ -34,9 +34,6 @@ const MyCardComponent = ({ items, index }) => {
 
         duration: 3000,
       }).showToast();
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
     }
   };
 

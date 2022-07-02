@@ -27,9 +27,6 @@ const Vision = () => {
 
         duration: 3000,
       }).showToast();
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
     }
   };
   return (

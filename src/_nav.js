@@ -4,7 +4,6 @@ import {
   cilBell,
   cilCalculator,
   cilChartPie,
-  cilCursor,
   cilDrop,
   cilNotes,
   cilPencil,
@@ -23,26 +22,26 @@ const _nav = [
   },
   {
     component: CNavTitle,
-    name: "Fincritic",
+    name: "Sites",
   },
   {
     component: CNavItem,
     name: "Fincritic",
     to: "/fincritic",
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: "INR(D)",
     to: "/inrd",
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
   },
 
   {
     component: CNavGroup,
     name: "Univers.com",
     to: "/unidotcom",
-    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,

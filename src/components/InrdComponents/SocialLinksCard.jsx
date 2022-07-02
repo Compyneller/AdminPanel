@@ -32,9 +32,6 @@ const SocialLinksCard = ({ items, index }) => {
         duration: 3000,
       }).showToast();
     }
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
   };
   return (
     <Card>

@@ -30,9 +30,6 @@ const OurTrustedWallet = () => {
         duration: 3000,
       }).showToast();
     }
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
   };
   return (
     <Card>

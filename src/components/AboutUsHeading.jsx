@@ -19,6 +19,7 @@ const AboutUsHeading = () => {
       "http://34.207.41.229:4100/fincritic/updatehomepage",
       body
     );
+
     if (data.success) {
       Toastify({
         text: "Update Successfully",
