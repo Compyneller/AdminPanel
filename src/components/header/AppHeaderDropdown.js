@@ -31,7 +31,7 @@ const AppHeaderDropdown = () => {
   const navigate = useNavigate();
   const { setAuth } = useContext(Data);
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-  console.log(userInfo);
+
   return (
     <CDropdown variant="nav-item">
       <CDropdownToggle placement="bottom-end" className="py-0" caret={false}>
@@ -54,8 +54,8 @@ const AppHeaderDropdown = () => {
             variant="danger"
             className="my-2 w-100"
             onClick={() => {
-              setAuth(false);
               localStorage.removeItem("userInfo");
+              setAuth(false);
               navigate("/login");
             }}
           >

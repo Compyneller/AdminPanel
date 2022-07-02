@@ -14,7 +14,7 @@ const DataContext = ({ children }) => {
   const [allData, setAllData] = useState([]);
   const [inrd, setInrd] = useState([]);
   const [auth, setAuth] = useState(false);
-  console.log(auth);
+
   useEffect(() => {
     const fetchHomepage = async () => {
       const { data } = await axios.get(

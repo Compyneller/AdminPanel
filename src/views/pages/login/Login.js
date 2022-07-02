@@ -36,8 +36,9 @@ const Login = () => {
         "http://34.207.41.229:4000/admin/login",
         body
       );
+
       if (data?.success) {
-        localStorage.setItem("user", true);
+        setAuth(true);
         localStorage.setItem("userInfo", JSON.stringify(data));
         navigate("/");
       }
@@ -53,7 +54,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className=" min-vh-100 d-flex flex-row align-items-center bg-dark">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={8}>

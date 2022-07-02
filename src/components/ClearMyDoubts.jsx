@@ -54,7 +54,9 @@ const ClearMyDoubts = ({ items, index }) => {
           </Button>
         </form>
         {items?.content_boxes?.map((item, idx) => {
-          return <FooterLinkForm item={item} index={index} idx={idx} />;
+          return (
+            <FooterLinkForm item={item} index={index} idx={idx} key={idx} />
+          );
         })}
       </Card.Body>
     </Card>

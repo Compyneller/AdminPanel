@@ -10,11 +10,11 @@ import { Data } from "../Context/DataContext";
 
 const DefaultLayout = () => {
   const navigate = useNavigate();
-
+  const { auth } = useContext(Data);
   useEffect(() => {
-    !localStorage.getItem("user")
+    !auth
       ? navigate("/login")
-      : localStorage.getItem("user")
+      : auth
       ? navigate("/dashboard")
       : navigate("/login");
   }, [localStorage.getItem("user")]);
